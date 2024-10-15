@@ -1,0 +1,61 @@
+﻿@model IEnumerable<PropertyRentals.Models.Manager>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container">
+    <h1>Managers</h1>
+
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr class="table-primary">
+                <th>
+                    First Name
+                </th>
+                <th>
+                    Last Name
+                </th>
+                <th>
+                    Email
+                </th>
+                <th>
+                    Phone
+                </th>
+                <th>
+                    User Id
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in ViewBag.ManagersData)
+            {
+                <tr class="table-active">
+                    <td>
+                        @item.UserDetails.FirstName
+                    </td>
+                    <td>
+                        @item.UserDetails.LastName
+                    </td>
+                    <td>
+                        @item.UserDetails.Email
+                    </td>
+                    <td>
+                        @item.UserDetails.Phone
+                    </td>
+                    <td>
+                        @item.UserDetails.UserId
+                    </td>
+                    <td>
+                        <a asp-action="Delete" asp-route-id="@item.Managers.ManagerId">Remove Manager</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>
