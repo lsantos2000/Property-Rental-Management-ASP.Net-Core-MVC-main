@@ -29,7 +29,7 @@ These instructions will help you set up and run the project on your local machin
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/yourusername/Property-Rental-Management.git
+   git clone https://github.com/lsantos2000/Property-Rental-Management.git
    cd Property-Rental-Management
    ```
 
@@ -78,7 +78,7 @@ These instructions will help you set up and run the project on your local machin
 
 ## Contributing
 
-Contributions are welcome! Please read the [contributing guidelines](CONTRIBUTING.md) first.
+Contributions are not allowed at this time! Once allowed, you will need to please read the [contributing guidelines](CONTRIBUTING.md) first.
 
 ## License
 
